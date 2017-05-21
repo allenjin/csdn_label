@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <springProfile name="development">
+        <logger name="com.sdu.edu.bigdata.csdn" level="DEBUG"/>
+    </springProfile>
+    <springProfile name="production">
+        <logger name="com.sdu.edu.bigdata.csdn" level="INFO"/>
+    </springProfile>
+</configuration>
